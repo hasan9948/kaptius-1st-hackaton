@@ -1,0 +1,204 @@
+
+
+
+
+:root {
+    --hue-primary:252;
+        --color-primary: hsl(var(--hue-primary), 75%, 60%);
+        
+
+}
+
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    color:var(--color-primary);
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    margin: 100px auto;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+.details{
+    display: flex;
+}
+
+.details h1{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    align-items: center;
+    padding: 10px;
+
+}
+span{
+    border-radius: 50%;
+    margin: 10px;
+}
+
+
+.all_btn{
+    border: 3px solid var(--color-primary);
+    padding: 8px 10px;
+    border-radius: 10px;
+    color: var(--color-primary);
+    
+    font-weight: bold;
+    display: block;
+    margin:20px auto;
+    background-color: #fff;
+    width: 30%;
+
+
+}
+a{
+    text-decoration: none;
+}
+.all_btn:hover{
+    background-color:var(--color-primary);
+    color: #fff;
+
+
+
+}
+
+
+/*  search field styling  */
+input.searchdata{
+    width: 50%;
+
+}
+
+input#incomeDesc ,input#incomeAmount ,input#expAmount,input#expDesc{
+    border: 3px solid var(--color-primary);
+    color:var(--color-primary);
+    outline: none;
+}
+
+
+h1{
+    color: var(--color-primary);
+    text-transform: uppercase;
+    
+}
+
+
+.popup{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+    /* background-color: red; */
+    opacity: .7;
+    padding: 10px;
+}
+
+
+
+
+
+
+/* color */
+
+.card{
+    border: 1px solid var(--color-primary);
+    background-color: #cdcdcd;
+}
+.card .colors{
+    margin-bottom: 2rem;
+    /* display: none; */
+}
+.card .colors .color{
+    background-color: var(--color-light);
+    display: flex;
+    justify-content: space-around;
+    padding: var(--search-padding);
+    border-radius: var(--border-radius);
+}
+
+.card .colors .color div{
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* .card .colors .color .active{
+    border: 5px solid #fff;
+} */
+
+.card .colors .color div:nth-child(1){
+    background-color: hsl(252, 95%, 65%);
+}.card .colors .color div:nth-child(2){
+    background-color: hsl(118, 96%, 65%);
+}.card .colors .color div:nth-child(3){
+    background-color: hsl(24, 96%, 65%);
+}.card .colors .color div:nth-child(4){
+    background-color: hsl(525, 95%, 65%);
+}.card .colors .color div:nth-child(5){
+    background-color: hsl(0, 95%, 65%);
+}
+
+.display{
+    display: none;
+}
+
+.theme{
+    position: fixed;
+    top: 100px;
+    right: 50px;
+    width: 100px;
+    opacity: .6;
+    text-transform: uppercase;
+}
+
+
+
+#filterForm{
+   margin-top: 40px;
+
+}
